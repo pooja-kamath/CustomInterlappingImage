@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XYZ.Core.UILayer.View.HomePage" BackgroundColor="White" >  
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Refine"  Activated="OnNextButtonClicked" Priority="0" Order="Primary"/>
+        <ToolbarItem Name="Next" Order="Primary" Priority="0" />
+        <ToolbarItem Name="" Order="Primary" Priority="0" />
+        <ToolbarItem Name="" Order="Primary" Priority="0" />
+        <ToolbarItem Name="" Order="Primary" Priority="0" />
+        <ToolbarItem Name="" Order="Primary" Priority="0" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36" />
+           </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions> 
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0" Grid.Column="0" x:Name="stackLayout" HorizontalOptions="FillAndExpand" HeightRequest="100" Orientation="Horizontal" BackgroundColor="Transparent" >
+              <Frame OutlineColor="Red" Padding="0,0,0,0" BackgroundColor="Transparent" HasShadow="False">
+                <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="www.png" BackgroundColor="Transparent" >
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_OnTapped"
+                        NumberOfTapsRequired="1" />
+                  </Image.GestureRecognizers>
+                </Image>
+              </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="0" Margin="158,0,0,0" x:Name="stackLayout1" HorizontalOptions="FillAndExpand" HeightRequest="100" Orientation="Horizontal" BackgroundColor="Transparent"  >
+              <Frame OutlineColor="Red" Padding="0,0,0,0" BackgroundColor="Transparent" HasShadow="False">
+                <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="aaa.png" BackgroundColor="Transparent" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_OnTappede"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                    </Image>
+                  </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="0" Margin="276,0,0,0"  x:Name="stackLayout2" HorizontalOptions="FillAndExpand" HeightRequest="100" Orientation="Horizontal" BackgroundColor="Transparent">
+              <Frame OutlineColor="Red" Padding="0,0,0,0" BackgroundColor="Transparent" HasShadow="False">
+                <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="aaa.png" BackgroundColor="Transparent" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_OnTappedd"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                    </Image>
+                  </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="0" Margin="394,0,0,0" x:Name="stackLayout3" HorizontalOptions="FillAndExpand" HeightRequest="100" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Frame OutlineColor="Red" Padding="0,0,0,0" BackgroundColor="Transparent" HasShadow="False" >
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="aaa.png" BackgroundColor="Transparent"  >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_OnTappedf"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+            </StackLayout>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
